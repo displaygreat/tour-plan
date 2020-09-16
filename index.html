@@ -1,51 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Best Tour Plan - Hotel Booking</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:ital,wght@0,700;0,800;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tour Plan</title>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:ital,wght@0,700;0,800;1,400&display=swap"
-    rel="stylesheet">
-</head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-top">
+          <a href="#" class="logo">
+            <img
+              src="img/horizontal-logo.svg"
+              alt="logo: Best Tour Plan"
+              class="logo__img"
+            />
+          </a>
 
-<body>
-  <header class="header">
-    <div class="container">
-      <div class="header-top">
-        <a href="#" class="logo">
-          <img src="img/horizontal-logo.svg" alt="logo: Best Tour Plan" class="logo__img">
-        </a>
+          <form action="#" class="search">
+            <input
+              type="text"
+              class="search__input"
+              placeholder="Search Location"
+            />
+            <button class="search__button">
+              <img src="img/search.svg" alt="Icon: search" />
+            </button>
+          </form>
 
-        <form action="#" class="search">
-          <input type="text" class="search__input" placeholder="Search Location">
-          <button class="search__button">
-            <img src="img/search.svg" alt="Icon: search">
-          </button>
-        </form>
+          <div class="user">
+            <a href="#" class="user__avatar"
+              ><img src="img/user-avatar.jpg" alt="User avatar"
+            /></a>
+            <span class="user__name">Nathan</span>
+          </div>
+          <!-- /.user -->
 
-        <div class="user">
-          <a href="#" class="user__avatar"><img src="img/user-avatar.jpg" alt="User avatar"></a>
-          <span class="user__name">Nathan</span>
+          <ul class="header-menu">
+            <li class="header-menu__item">
+              <a href="#" class="header-menu__link">All Deals</a>
+            </li>
+            <li class="header-menu__item">
+              <a href="#" class="header-menu__link">Hotels</a>
+            </li>
+            <li class="header-menu__item">
+              <a href="#" class="header-menu__link">Activities</a>
+            </li>
+            <li class="header-menu__item">
+              <a href="#" class="header-menu__link">Hotel Day Packages</a>
+            </li>
+            <li class="header-menu__item">
+              <a href="#" class="header-menu__link">Restaurants</a>
+            </li>
+            <li class="header-menu__item">
+              <a href="#" class="header-menu__link">Events</a>
+            </li>
+            <li class="header-menu__item">
+              <a href="#" class="header-menu__link">Rodrigues</a>
+            </li>
+          </ul>
         </div>
-        <!-- /.user -->
-
-        <ul class="header-menu">
-          <li class="header-menu__item"><a href="#" class="header-menu__link">All Deals</a></li>
-          <li class="header-menu__item"><a href="#" class="header-menu__link">Hotels</a></li>
-          <li class="header-menu__item"><a href="#" class="header-menu__link">Activities</a></li>
-          <li class="header-menu__item"><a href="#" class="header-menu__link">Hotel Day Packages</a></li>
-          <li class="header-menu__item"><a href="#" class="header-menu__link">Restaurants</a></li>
-          <li class="header-menu__item"><a href="#" class="header-menu__link">Events</a></li>
-          <li class="header-menu__item"><a href="#" class="header-menu__link">Rodrigues</a></li>
-        </ul>
+        <!-- /.header-top -->
       </div>
-      <!-- /.header-top -->
-    </div>
-    <!-- /.container -->
-  </header>
-  <!-- /.header -->
-</body>
-
+      <!-- /.container -->
+    </header>
+    <!-- /.header -->
+  </body>
 </html>
