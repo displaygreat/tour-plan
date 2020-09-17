@@ -448,6 +448,7 @@ img {
   right: 0;
   border: none;
   background-color: #EC1F46;
+  cursor: pointer;
 }
 
 .user {
@@ -493,7 +494,7 @@ img {
     padding-bottom: 30px;
   }
   .navbar__search {
-    margin-left: auto;
+    margin-left: 47px;
   }
   .navbar-menu {
     padding-top: 20px;
@@ -501,7 +502,7 @@ img {
   }
   .navbar-menu__link {
     font-size: 15px;
-    font-weight: 12px;
+    line-height: 12px;
   }
   .search-input {
     width: 340px;
