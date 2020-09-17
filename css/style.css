@@ -492,7 +492,7 @@ img {
     padding-top: 30px;
     padding-bottom: 30px;
   }
-  .navbar-search {
+  .navbar__search {
     margin-left: auto;
   }
   .navbar-menu {
@@ -540,13 +540,16 @@ img {
   .menu-button__line {
     width: 16px;
     height: 1px;
-    background-color: #text-color;
+    background-color: #333333;
   }
 }
 
 @media (max-width: 576px) {
   .container {
-    max-width: 99px;
+    max-width: 280px;
+  }
+  .logo {
+    width: 99px;
   }
 }
 /*# sourceMappingURL=style.css.map */
