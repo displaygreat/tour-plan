@@ -614,7 +614,12 @@ img {
   z-index: 10;
 }
 
+.swiper-slide__img {
+  margin: -50% 0 0 0;
+}
+
 .slider {
+  height: 450px;
   width: 728px;
 }
 
