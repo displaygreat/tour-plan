@@ -617,6 +617,13 @@ img {
   line-height: 18px;
 }
 
+.swiper-slide__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .swiper-container {
   width: 100%;
   height: 100%;
@@ -674,6 +681,7 @@ img {
   padding: 27px 28px;
   background-color: #0A223D;
   color: #fff;
+  font-family: 'Nunito', sans-serif;
 }
 
 .booking__info {
@@ -804,12 +812,6 @@ img {
   }
   .slider {
     width: 590px;
-  }
-  .swiper-slide__img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
   }
 }
 
