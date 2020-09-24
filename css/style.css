@@ -799,7 +799,7 @@ img {
   cursor: pointer;
 }
 
-.map {
+.map-block {
   width: 347px;
   height: 213px;
   border-radius: 10px;
@@ -861,7 +861,7 @@ img {
   .slider {
     width: 100%;
   }
-  .map {
+  .map-block {
     width: 340px;
   }
   .swiper-slide__img {
@@ -945,7 +945,7 @@ img {
   .booking {
     width: 100%;
   }
-  .map {
+  .map-block {
     width: 100%;
   }
 }
