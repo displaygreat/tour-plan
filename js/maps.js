@@ -33,12 +33,10 @@ ymaps.ready(init);
 
 function init() {
   var myMap = new ymaps.Map(
-      "map",
-      {
+      "map", {
         center: [42.48979137, 27.47764591],
         zoom: 16,
-      },
-      {
+      }, {
         searchControlProvider: "yandex#search",
       }
     ),
@@ -46,10 +44,9 @@ function init() {
     // Макет создается через фабрику макетов с помощью текстового шаблона.
     HintLayout = ymaps.templateLayoutFactory.createClass(
       "<div class='my-hint'>" +
-        "<b>{{ properties.object }}</b><br />" +
-        "{{ properties.address }}" +
-        "</div>",
-      {
+      "<b>{{ properties.object }}</b><br />" +
+      "{{ properties.address }}" +
+      "</div>", {
         // Определяем метод getShape, который
         // будет возвращать размеры макета хинта.
         // Это необходимо для того, чтобы хинт автоматически
@@ -72,12 +69,10 @@ function init() {
     );
 
   var myPlacemark = new ymaps.Placemark(
-    [42.48979137, 27.47764591],
-    {
+    [42.48979137, 27.47764591], {
       address: "ul. Knyaz Alexander Batenberg 1,Burgas",
       object: "Port of Burgas",
-    },
-    {
+    }, {
       hintLayout: HintLayout,
     }
   );
