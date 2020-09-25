@@ -10,9 +10,9 @@
     rel="stylesheet">
   <link rel="stylesheet" href="css/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css" />
-  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=f1d30f65-15e9-46f5-9bbc-4e44b9222456"
+  <!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=f1d30f65-15e9-46f5-9bbc-4e44b9222456"
     type="text/javascript">
-  </script>
+  </script> -->
   <script src="js/maps.js" type="text/javascript"></script>
 </head>
 
@@ -122,11 +122,11 @@
       <!-- /.hotel-info -->
       <div class="hotel-grid">
 
-        <!-- Slider main container -->
+
         <div class="swiper-container hotel-slider hotel__slider">
-          <!-- Additional required wrapper -->
+
           <div class="swiper-wrapper">
-            <!-- Slides -->
+
             <div class="swiper-slide hotel-slider__item">
               <img class="swiper-slide__img" src="img/slide.jpg" alt="slide" />
             </div>
@@ -146,11 +146,11 @@
               <img class="swiper-slide__img" src="img/hotel-5.jpg" alt="slide" />
             </div>
           </div>
-          <!-- If we need navigation buttons -->
+
           <div class="hotel-slider__button hotel-slider__button--prev"></div>
           <div class="hotel-slider__button hotel-slider__button--next"></div>
         </div>
-        <!-- /.swiper-container -->
+
 
         <div class="hotel-right">
           <div class="booking">
@@ -184,17 +184,18 @@
             <!-- /.booking__call-center -->
             <button class="button booking__button">View Other Options</button>
           </div>
-          <!-- /.booking -->
-          <!-- <div class="map-block">
+          <div class="map-block">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.0046814309244!2d79.80141631382159!3d7.574466994537729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2c96110de8289%3A0x3fd7668bc2d85eb9!2sGrand%20Hilton%20Hotel!5e0!3m2!1sen!2sil!4v1600929417992!5m2!1sen!2sil"
               width="100%" height="213" frameborder="0" style="border: 0" allowfullscreen="" aria-hidden="false"
               tabindex="0"></iframe>
-          </div> -->
-          <!-- /.map-block -->
-          <div class="map-block">
-            <div id="map" style="width: 100%; height: 213px"></div>
           </div>
+          <!-- .map-block -->
+
+          <!-- Для подключения Янедекс Карт -->
+          <!-- <div class="map-block">
+            <div id="map" style="width: 100%; height: 213px"></div>
+          </div> -->
         </div>
         <!-- /.hotel-right -->
       </div>
@@ -217,15 +218,140 @@
     </div>
     <!-- /.newsletter-wrapper -->
   </section>
+
   <section class="reviews">
+    <div class="container">
+      <h2 class="reviews__title">
+        What people thinks about us
+      </h2>
+
+
+      <div class="swiper-container reviews-slider">
+
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="reviews-slider__item">
+
+              <div class="reviews-slider__profile">
+                <img src="img/reviews-avatar.jpg" alt="Megan Fox" class="reviews-slider__avatar">
+                <h3 class="reviews-slider__username">Megan Fox</h3>
+                <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
+                <div class="reviews-slider__rating">
+                  <img src="img/star.svg" alt="star" />
+                  <img src="img/star.svg" alt="star" />
+                  <img src="img/star.svg" alt="star" />
+                  <img src="img/star.svg" alt="star" />
+                  <img src="img/star.svg" alt="star" />
+                </div>
+                <!-- /.reviews-slider__rating -->
+
+              </div>
+              <!-- /.reviews-slider__profile -->
+              <p class="reviews-slider__text">
+                It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very well.
+                Issue was only
+                that Lift was not in working and we were allotted to 3rd floor and amenities articles were in corner of
+                gallery which
+                were giving bad feeling. Breakfast was good and support of the staff was also very nice. Location is not
+                good as per
+                atmosphere, it is very nearby most of the popular places but self location in a narrow street is not
+                good. Overall it
+                was a good experience and could recommend.
+              </p>
+
+            </div>
+            <!-- /.reviews-slider__item -->
+          </div>
+          <!-- /.swiper-slide -->
+
+          <div class="swiper-slide">
+            <div class="reviews-slider__item">
+
+              <div class="reviews-slider__profile">
+                <img src="img/reviews-avatar-2.jpg" alt="Hana Oswald" class="reviews-slider__avatar">
+                <h3 class="reviews-slider__username">Hana Oswald</h3>
+                <span class="reviews-slider__date">Stayed 14 Oct, 2020</span>
+                <div class="reviews-slider__rating">
+                  <img src="img/star.svg" alt="star" />
+                  <img src="img/star.svg" alt="star" />
+                  <img src="img/star.svg" alt="star" />
+                  <img src="img/star.svg" alt="star" />
+                  <img src="img/star.svg" alt="star" />
+                </div>
+                <!-- /.reviews-slider__rating -->
+
+              </div>
+              <!-- /.reviews-slider__profile -->
+              <p class="reviews-slider__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum eligendi commodi error accusamus facere
+                maxime odio minima. Voluptate, officia excepturi placeat obcaecati illum fugiat cumque, facere ullam
+                cupiditate commodi quisquam nisi maxime, reprehenderit nostrum odio blanditiis vero optio? Sapiente,
+                repudiandae.
+              </p>
+
+            </div>
+            <!-- /.reviews-slider__item -->
+          </div>
+          <!-- /.swiper-slide -->
+
+          <div class="swiper-slide">
+            <div class="reviews-slider__item">
+
+              <div class="reviews-slider__profile">
+                <img src="img/reviews-avatar-3.jpg" alt="Juliya Green" class="reviews-slider__avatar">
+                <h3 class="reviews-slider__username">Juliya Green</h3>
+                <span class="reviews-slider__date">Stayed 31 May, 2018</span>
+                <div class="reviews-slider__rating">
+                  <img src="img/star.svg" alt="star" />
+                  <img src="img/star.svg" alt="star" />
+                  <img src="img/star.svg" alt="star" />
+                  <img src="img/star.svg" alt="star" />
+                  <img src="img/star.svg" alt="star" />
+                </div>
+                <!-- /.reviews-slider__rating -->
+
+              </div>
+              <!-- /.reviews-slider__profile -->
+              <p class="reviews-slider__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita deserunt qui aperiam magnam eaque,
+                illo tenetur accusantium non dignissimos assumenda debitis beatae, officiis repudiandae veritatis
+                commodi numquam exercitationem id, a iure quisquam maxime itaque obcaecati velit. Quis error maxime eos
+                exercitationem? Veniam consequuntur quisquam non tempora maxime deserunt omnis debitis. Aperiam amet
+                illo eius harum reprehenderit nostrum magni repellendus. Praesentium, ea? Et, voluptatibus dicta.
+                Maiores facere voluptates nihil corporis tempore.
+              </p>
+
+            </div>
+            <!-- /.reviews-slider__item -->
+          </div>
+          <!-- /.swiper-slide -->
+
+        </div>
+        <!-- /.swiper-wrapper -->
+
+
+        <!-- If we need navigation buttons -->
+        <div class="reviews-slider__button reviews-slider__button--prev"></div>
+        <div class="reviews-slider__button reviews-slider__button--next"></div>
+
+
+      </div>
+      <!-- /.reviews-slider -->
+
+    </div>
+    <!-- /.container -->
+  </section>
+
+  <!-- <section class="reviews">
     <div class="container">
       <h2 class="reviews-title">
         What people thinks about us
       </h2>
-      <!-- Slider main container -->
+      
       <div class="swiper-container reviews-slider">
         <div class="swiper-wrapper reviews-slider-wrapper">
-          <!-- Slides -->
+          
           <div class="swiper-slide reviews-slider__item">
             <div class="reviews-slider__profile">
               <img src="img/reviews-avatar.jpg" alt="Photo: Megan Fox" class="reviews-slider__avatar">
@@ -239,9 +365,9 @@
                 <img src="img/star.svg" alt="star" />
                 <img src="img/star.svg" alt="star" />
               </div>
-              <!-- .reviews-slider__rating -->
+              
             </div>
-            <!-- /.reviews-slider__profile -->
+            
             <p class="review-slider__text">
               It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very well.
               Issue was only that Lift was not in working and we were allotted to 3rd floor and amenities articles were
@@ -250,69 +376,21 @@
               location in a narrow street is not good. Overall it was a good experience and could recommend.
             </p>
           </div>
-          <!-- .reviews-slider__item -->
-          <!-- Slides -->
-          <div class="swiper-slide reviews-slider__item">
-            <div class="reviews-slider__profile">
-              <img src="img/reviews-avatar-3.jpg" alt="Photo: Neta Gur" class="reviews-slider__avatar">
-
-              <h3 class="reviews-slider__username">Neta Gur</h3>
-              <span class="reviews-slider__date">Stayed 14 Dec, 2020</span>
-              <div class="reviews-slider__rating">
-                <img src="img/star.svg" alt="star" />
-                <img src="img/star.svg" alt="star" />
-                <img src="img/star.svg" alt="star" />
-                <img src="img/star.svg" alt="star" />
-                <img src="img/star.svg" alt="star" />
-              </div>
-              <!-- .reviews-slider__rating -->
-            </div>
-            <!-- /.reviews-slider__profile -->
-            <p class="review-slider__text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad neque, distinctio error iste omnis eius
-              dolores quos cum officiis iusto necessitatibus quam laboriosam tempora placeat non. Soluta magni autem
-              expedita saepe, quod vitae veniam molestias mollitia illum dolore ipsam natus dolor magnam hic dicta esse
-              ducimus ad iusto ut! Laboriosam iusto mollitia voluptatum dolores laudantium debitis alias cupiditate
-              nostrum. Quasi et rem quis! Veritatis laborum adipisci a officiis iusto ipsam?
-            </p>
-          </div>
-          <!-- .reviews-slider__item -->
-          <!-- Slides -->
-          <div class="swiper-slide reviews-slider__item">
-            <div class="reviews-slider__profile">
-              <img src="img/reviews-avatar-2.jpg" alt="Photo: Juliya Green" class="reviews-slider__avatar">
-
-              <h3 class="reviews-slider__username">Juliya Green</h3>
-              <span class="reviews-slider__date">Stayed 31 May, 2018</span>
-              <div class="reviews-slider__rating">
-                <img src="img/star.svg" alt="star" />
-                <img src="img/star.svg" alt="star" />
-                <img src="img/star.svg" alt="star" />
-                <img src="img/star.svg" alt="star" />
-                <img src="img/star.svg" alt="star" />
-              </div>
-              <!-- .reviews-slider__rating -->
-            </div>
-            <!-- /.reviews-slider__profile -->
-            <p class="review-slider__text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum consequuntur consequatur, ipsam laborum
-              accusantium ea ipsum deleniti blanditiis perferendis voluptatem earum quod sed inventore debitis
-              cupiditate quibusdam expedita labore magnam reiciendis similique numquam mollitia molestias incidunt. Quam
-              hic fugit voluptatibus.
-            </p>
-          </div>
-          <!-- .reviews-slider__item -->
+          
+          
+          
+          
         </div>
 
-        <!-- If we need navigation buttons -->
+        
         <div class="reviews-slider__button reviews-slider__button--prev"></div>
         <div class="reviews-slider__button reviews-slider__button--next"></div>
 
       </div>
-      <!-- .reviews-slider -->
+      
     </div>
-    <!-- /.container -->
-  </section>
+    
+  </section> -->
   <section class="activities">
     <div class="container">
       <h2 class="activities__title">

@@ -48,20 +48,24 @@
     &-slide
       &__img
         width: 100%
-.newsletter
-  padding: 92px 0 93px 0
-.reviews
-  &-slider
-    &-item
-      max-width: 580px
-.activities
-  &-wrapper
-    flex-wrap: wrap
-  &__card
-    margin-bottom: 20px
-.card
-  width: 340px
-  height: 255px
+  .newsletter
+    padding: 92px 0 93px 0
+  .reviews
+    &-slider
+      &-item
+        max-width: 580px
+    &__title    
+      font-size: 30px
+      line-height: 38px
+      margin-bottom: 50px
+  .activities
+    &__card
+      margin-bottom: 20px
+    &-wrapper
+      flex-wrap: wrap
+  .card
+    width: 340px
+    height: 255px
 @media (max-width: 768px)
   .container
     max-width: 576px
@@ -124,8 +128,13 @@
       max-width: 576px
       width: 92%
   .reviews
+    &__title
+      font-size: 18px
+      line-height: 23px
+      margin-bottom: 42px
     &-slider
       &__item
+        width: 100%
         padding: 0 30px 30px
         &:after, &::before
           display: none

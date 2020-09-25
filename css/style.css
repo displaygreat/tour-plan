@@ -585,7 +585,7 @@ img {
 
 .hotel-slider {
   height: 450px;
-  width: 600px;
+  width: 720px;
 }
 
 .hotel-slider__item {
@@ -596,7 +596,7 @@ img {
   overflow: hidden;
 }
 
-.hotel-slider:after {
+.hotel-slider__item:after {
   position: absolute;
   content: '';
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 122, 223, 0.48)), to(rgba(255, 255, 255, 0.128)));
@@ -606,7 +606,6 @@ img {
   bottom: 0;
   right: 0;
   z-index: 10;
-  border-radius: 8px;
 }
 
 .hotel-slider__button {
@@ -929,18 +928,13 @@ img {
   padding: 40px 0 70px 0;
 }
 
-.reviews-title {
+.reviews__title {
   font-weight: bold;
   font-size: 36px;
   line-height: 45px;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 70px;
-}
-
-.reviews-slider {
-  max-width: 730px;
-  margin: 0 auto;
 }
 
 .reviews-slider__item {
@@ -955,7 +949,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 730px;
+  width: 730px;
   margin: 45px auto 0;
   background-color: #fff;
   border-radius: 8px;
@@ -1227,28 +1221,28 @@ img {
   .swiper-slide__img {
     width: 100%;
   }
-}
-
-.newsletter {
-  padding: 92px 0 93px 0;
-}
-
-.reviews-slider-item {
-  max-width: 580px;
-}
-
-.activities-wrapper {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.activities__card {
-  margin-bottom: 20px;
-}
-
-.card {
-  width: 340px;
-  height: 255px;
+  .newsletter {
+    padding: 92px 0 93px 0;
+  }
+  .reviews-slider-item {
+    max-width: 580px;
+  }
+  .reviews__title {
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 50px;
+  }
+  .activities__card {
+    margin-bottom: 20px;
+  }
+  .activities-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .card {
+    width: 340px;
+    height: 255px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1348,7 +1342,13 @@ img {
     max-width: 576px;
     width: 92%;
   }
+  .reviews__title {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 42px;
+  }
   .reviews-slider__item {
+    width: 100%;
     padding: 0 30px 30px;
   }
   .reviews-slider__item:after, .reviews-slider__item::before {
