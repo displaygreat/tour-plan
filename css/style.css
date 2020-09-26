@@ -1414,6 +1414,9 @@ img {
   .subscribe {
     width: 100%;
   }
+  .reviews-slider__text {
+    text-align: left;
+  }
   .card {
     width: 100%;
   }
