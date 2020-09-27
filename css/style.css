@@ -1312,18 +1312,12 @@ img {
             order: -1;
     margin-left: 0;
   }
-  .slider {
-    height: 350px;
-  }
   .hotel-right {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     min-height: 450px;
-  }
-  .hotel-slider {
-    height: 350px;
   }
   .booking {
     width: 100%;
@@ -1388,11 +1382,8 @@ img {
   .logo {
     width: 99px;
   }
-  .slider {
-    height: 179px;
-  }
   .hotel-slider {
-    height: 250px;
+    height: 179px;
   }
   .hotel__slider {
     margin-bottom: 20px;
