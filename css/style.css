@@ -1319,6 +1319,9 @@ img {
             flex-direction: column;
     min-height: 450px;
   }
+  .hotel-slider {
+    height: 350px;
+  }
   .booking {
     width: 100%;
   }
@@ -1383,7 +1386,7 @@ img {
     width: 99px;
   }
   .hotel-slider {
-    height: 179px;
+    height: 250px;
   }
   .hotel__slider {
     margin-bottom: 20px;
@@ -1410,6 +1413,12 @@ img {
   }
   .card {
     width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  .hotel-slider {
+    height: 179px;
   }
 }
 /*# sourceMappingURL=style.css.map */
