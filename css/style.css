@@ -843,8 +843,8 @@ img {
 .packages-grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 30% 30% 30%;
-      grid-template-columns: 30% 30% 30%;
+  -ms-grid-columns: 350px 350px 350px;
+      grid-template-columns: 350px 350px 350px;
   -ms-grid-rows: 500px 500px;
       grid-template-rows: 500px 500px;
   -webkit-column-gap: 30px;
@@ -858,12 +858,16 @@ img {
   line-height: 45px;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 65px;
+  margin: 0 0 65px 0;
 }
 
 .packages-card {
   border-radius: 8px;
   overflow: hidden;
+}
+
+.packages-card__rating {
+  margin-bottom: 5px;
 }
 
 .packages-card:nth-child(1) {
@@ -879,6 +883,25 @@ img {
       grid-template-columns: 50% 50%;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
+  position: relative;
+}
+
+.packages-card-big-offer {
+  position: absolute;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 0px 4px 4px 0px;
+  left: 0;
+  top: 26px;
+  background-color: #EC1F46;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.packages-card-big-info {
+  background-color: #0A223D;
+  padding: 46px 21px 30px 44px;
 }
 
 .packages-card-photo {
@@ -888,17 +911,31 @@ img {
      object-fit: cover;
 }
 
-.packages-card-info {
-  background-color: #0A223D;
-  padding: 46px 21px 30px 44px;
-}
-
 .packages-card-small {
   height: 100%;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 50% 50%;
       grid-template-rows: 50% 50%;
+  position: relative;
+}
+
+.packages-card-small-info {
+  background-color: #0A223D;
+  padding: 30px 21px 25px 32px;
+}
+
+.packages-card-small-offer {
+  position: absolute;
+  color: #fff;
+  padding: 4px 9px;
+  border-radius: 0px 4px 4px 0px;
+  left: 0;
+  top: 26px;
+  background-color: #EC1F46;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 10px;
 }
 
 .packages__button {
@@ -924,10 +961,6 @@ img {
   color: #fff;
 }
 
-.card-big__rating {
-  margin-bottom: 5px;
-}
-
 .card-big__subtitle {
   margin: 0 0 27px 0;
 }
@@ -938,6 +971,16 @@ img {
   line-height: 160.6%;
   color: #fff;
   margin: 0 0 34px 0;
+}
+
+.card-big-footer {
+  margin-top: 34px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .card-details {
@@ -953,16 +996,6 @@ img {
   line-height: 15px;
   color: #fff;
   margin-left: 14px;
-}
-
-.card-footer {
-  margin-top: 34px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .card-price {
@@ -982,6 +1015,20 @@ img {
   line-height: 30px;
   color: #fff;
   margin-bottom: 5px;
+}
+
+.card-small__subtitle {
+  margin: 0 0 23px 0;
+}
+
+.card-small-footer {
+  margin-top: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .newsletter {
