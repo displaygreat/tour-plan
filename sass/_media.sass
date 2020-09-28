@@ -11,6 +11,9 @@
   .card
     width: 230px
     height: 230px
+    &-big
+      &__text
+        margin-bottom: 14px
 @media (max-width: 992px)
   .container, .newsletter-wrapper
     max-width: 700px
@@ -48,6 +51,17 @@
     &-slide
       &__img
         width: 100%
+  .packages
+    &-grid
+      grid-template-columns: repeat(2, 1fr)
+      grid-template-rows: repeat(3, 500px)
+    &__title
+      font-size: 30px
+      line-height: 38px
+      margin: 0 0 50px 0
+  .card-big
+    &__text
+      margin-bottom: 30px    
   .newsletter
     padding: 92px 0 93px 0
   .reviews
@@ -68,8 +82,8 @@
     height: 255px
 @media (max-width: 768px)
   .container
-    max-width: 576px
-    width: 92%
+    // max-width: 576px
+    width: 90%
   .navbar
     &__search, &-menu, &__user
       display: none
@@ -184,10 +198,49 @@
         text-align: left
   .card
     width: 100%
+    &-big
+      &__text
+        display: none
+      &__subtitle
+        margin: 0 0 23px 0
+  .packages
+    &-grid
+      grid-template-columns: repeat(1, 100%)
+      grid-template-rows: repeat(5, 500px)
+    &__title
+      font-size: 18px
+      line-height: 23px
+    &-card
+      &-big
+        grid-template-rows: 50% 50%
+        grid-template-columns: repeat(1, 100%)
+       
+        &-offer
+          padding: 4px 9px
+          background-color: #EC1F46
+          font-weight: 600
+          font-size: 8px
+          line-height: 10px
+        &-info
+          padding: 20px 21px 25px 32px
+      &__rating
+        display: none
+      &__big
+        grid-column: 1/2 
+      // &-photo
+      //   &:nth-child(1)
+      //     object-position: top center
+      //   &:nth-child(5)
+      //     object-position: center center
+          
 @media (max-width: 425px)
   .hotel
     &-slider
       height: 179px
+  .packages
+    &-card
+      // &-foto
+      //   object-position: top center
 
   
     
