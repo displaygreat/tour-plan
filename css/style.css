@@ -1785,6 +1785,7 @@ img {
   }
   .navbar-bottom_visible {
     display: block;
+    overflow: scroll;
   }
   .navbar-menu {
     -webkit-box-orient: vertical;
@@ -1828,9 +1829,6 @@ img {
     color: #fff;
     margin-left: 0;
     margin-top: 10px;
-  }
-  .search__input_mobile_visible {
-    width: 100%;
   }
   .stars {
     -ms-flex-preferred-size: auto;
@@ -2093,12 +2091,14 @@ img {
     grid-column: 1;
     -ms-grid-row: 3;
     grid-row: 3;
+    margin-left: 0;
   }
   .footer__contact-details {
     -ms-grid-column: 1;
     grid-column: 1;
     -ms-grid-row: 6;
     grid-row: 6;
+    width: 100%;
   }
   .footer__contact-form {
     -ms-grid-column: 1;
@@ -2140,11 +2140,8 @@ img {
   .hotel-slider {
     height: 179px;
   }
-}
-
-@media (max-width: 350px) {
-  .footer__contact-details, .footer__contact-form {
-    width: 90%;
+  .search__input_mobile_visible {
+    width: 280px;
   }
 }
 /*# sourceMappingURL=style.css.map */
