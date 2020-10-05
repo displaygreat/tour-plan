@@ -18,7 +18,6 @@
     &__input
       flex-basis: 100%
 
-
 @media (max-width: 992px)
   .container, .newsletter-wrapper
     max-width: 700px
@@ -40,7 +39,7 @@
     &-input
       width: 340px
   .hotel
-    &-grid 
+    &-grid
       flex-direction: column
     &__slider
       margin-bottom: 30px
@@ -66,14 +65,14 @@
       margin: 0 0 50px 0
   .card-big
     &__text
-      margin-bottom: 30px    
+      margin-bottom: 30px
   .newsletter
     padding: 92px 0 93px 0
   .reviews
     &-slider
       &-item
         max-width: 580px
-    &__title    
+    &__title
       font-size: 30px
       line-height: 38px
       margin-bottom: 50px
@@ -160,7 +159,7 @@
         &_mobile
           &_visible
             display: block
-          
+
   .menu
     &-button
       width: 16px
@@ -183,7 +182,7 @@
         color: $light
         margin-left: 0
         margin-top: 10px
-  
+
   .stars
     flex-basis: auto
   .hotel
@@ -243,7 +242,7 @@
         margin-bottom: 23px
       &-footer
         margin-top: 24px
-      
+
   .newsletter
     &-wrapper
       flex-direction: column
@@ -283,14 +282,17 @@
     height: 255px
   .footer
     &__input
-      flex-basis: 100%  
+      flex-basis: 100%
+  .modal
+    &__dialog
+      padding: 33px 52px
 @media (max-width: 576px)
   .logo
     width: 99px
   .hotel
     &-slider
       height: 250px
-    &__slider  
+    &__slider
       margin-bottom: 20px
   .newsletter
     padding: 76px 0 83px
@@ -328,7 +330,7 @@
       &-small
         grid-template-rows: 50% 50%
         grid-template-columns: repeat(1, 100%)
-        height: 500px       
+        height: 500px
         &-offer
           padding: 4px 9px
           background-color: #EC1F46
@@ -340,7 +342,7 @@
       &__rating
         display: none
       &__big
-        grid-column: 1/2 
+        grid-column: 1/2
       // &-photo
       //   &:nth-child(1)
       //     object-position: top center
@@ -395,6 +397,19 @@
       display: flex
       justify-content: space-between
       margin-bottom: 10px
+  .modal
+    &__dialog
+      top: 50%
+      width: 100%
+      height: 100%
+      padding: 33px 33px
+      overflow: scroll
+    &__button
+      width: 100%
+      order: 2
+    &__info
+      margin-bottom: 15px
+      order: 1
 @media (max-width: 425px)
   .hotel
     &-slider
@@ -417,12 +432,3 @@
   //   &__policy
   //     &-item
   //       // margin-right: 5px
-  
-    
-
-
-  
-    
-
-      
-    

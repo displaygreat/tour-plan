@@ -43,6 +43,12 @@ $(document).ready(function () {
   modalButton.on('click', openModal);
   modalCloseButton.on('click', closeModal);
 
+  $(document).keydown(function (event) {
+    if (event.keyCode == 27) {
+      $(".modal").hide();
+    }
+  });
+
   function openModal() {
     var modalOverlay = $(".modal__overlay");
     var modalDialog = $(".modal__dialog");
