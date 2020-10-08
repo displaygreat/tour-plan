@@ -67,10 +67,10 @@
       background-position: center
       background-size: 10px
       background-color: transparent
-      &--next
+      &_next
         right: 18px
         background-image: url(../img/arrow-next.svg)
-      &--prev
+      &_prev
         left: 18px
         background-image: url(../img/arrow-prev.svg)
 .stars
@@ -181,41 +181,6 @@
   overflow: hidden
 .map-show-on-click
   cursor: pointer
-  background-color: #999
-  position: relative
-.map-show-on-click:before
-  position: absolute
-  content: ""
-  background: rgba(0,0,0,0.6)
-  top: 0
-  left: 0
-  display: block
-  width: 100%
-  height: 100%
-  opacity: 0
-  transition: .4s ease
-  z-index: 1
-.map-show-on-click::after
-  position: absolute
-  content: "Tap to download a map"
-  z-index: 2
-  color: rgb(255, 255, 255)
-  opacity: 0
-  top: 50%
-  left: 50%
-  width: 180px
-  font-size: 14px
-  height: 48px
-  line-height: 24px
-  margin-left: -90px
-  margin-top: -24px
-  text-align: center
-  font-weight: 400
-  // text-transform: uppercase
-  transition: all 0.2s ease 0s
-.map-show-on-click:hover:before,
-.map-show-on-click:hover:after
-  opacity: 1
 #map
   width: 100%
   height: 100%

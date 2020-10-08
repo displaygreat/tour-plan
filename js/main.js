@@ -4,8 +4,8 @@ $(document).ready(function () {
     loop: true,
     // Navigation arrows
     navigation: {
-      nextEl: '.hotel-slider__button--next',
-      prevEl: '.hotel-slider__button--prev',
+      nextEl: '.hotel-slider__button_next',
+      prevEl: '.hotel-slider__button_prev',
     },
     keyboard: {
       enabled: true,
@@ -18,8 +18,8 @@ $(document).ready(function () {
     loop: true,
     // Navigation arrows
     navigation: {
-      nextEl: '.reviews-slider__button--next',
-      prevEl: '.reviews-slider__button--prev',
+      nextEl: '.reviews-slider__button_next',
+      prevEl: '.reviews-slider__button_prev',
     },
     keyboard: {
       enabled: true,

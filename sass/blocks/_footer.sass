@@ -15,6 +15,8 @@
     align-self: center
   &__categories
     grid-row: 1 / 4
+  &__ul
+    padding: 0
   &__social
     &-links
       display: flex
@@ -39,7 +41,7 @@
     justify-content: space-between
     flex-wrap: wrap
 
-  &__ul
+  &__div
     padding: 0
     margin: 0
     list-style: none
@@ -56,19 +58,66 @@
       margin-bottom: 36px
   &__item
     display: flex
+    flex-direction: column
     align-items: flex-start
     font-weight: normal
     font-size: 14px
     line-height: 160%
     color: $footer-text-color
+    &_location
+      &::before
+        background-image: url(../img/map-marker.svg)
+    &_phone
+      &::before
+        background-image: url(../img/contact-phone-call.svg)
+    &_email
+      &::before
+        background-image: url(../img/mail.svg)
     &--mb-2
+      position: relative
+      display: flex
+      flex-direction: column
       margin-bottom: 20px
+      &::before
+        position: absolute
+        content: ""
+        display: block
+        width: 24px
+        height: 24px
+        background-size: 20px
+        background-repeat: no-repeat
+        background-position: center
+        background-size: contain
+        top: 0
+        left: 0
+  &__details
+    // position: relative
+    margin: 0 0 0 40px
+    // &:before
+    //   position: absolute
+    //   content: ""
+    //   background-image: url(../img/map-marker.svg)
+    //   display: block
+    //   width: 24px
+    //   height: 24px
+    //   background-size: 20px
+    //   background-repeat: no-repeat
+    //   background-position: center
+    //   background-size: contain
+    //   left: 0
+  &__phone,
+  &__email
+    text-decoration: none
+    color: inherit
+    cursor: pointer
   &__icon
     &-wrapper
       min-width: 40px
   &__text
     color: $footer-text-color
-    mb22px
+    font-weight: normal
+    font-size: 14px
+    line-height: 160%
   &__link
     text-decoration: none
     color: inherit
@@ -99,5 +148,7 @@
       line-height: 15px
       color: $light
       margin-right: 10px
+      cursor: pointer
+      text-decoration: none
   &__payment
     grid-column: 8 / 9
