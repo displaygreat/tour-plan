@@ -393,7 +393,7 @@ img {
 
 .invalid {
   margin-bottom: 10px;
-  color: #FF61E3;
+  color: #ff5252;
   font-size: 18px;
   max-width: 360px;
 }
@@ -850,6 +850,52 @@ img {
   height: 213px;
   border-radius: 10px;
   overflow: hidden;
+}
+
+.map-show-on-click {
+  cursor: pointer;
+  background-color: #999;
+  position: relative;
+}
+
+.map-show-on-click:before {
+  position: absolute;
+  content: "";
+  background: rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
+  z-index: 1;
+}
+
+.map-show-on-click::after {
+  position: absolute;
+  content: "Tap to download a map";
+  z-index: 2;
+  color: white;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  width: 180px;
+  font-size: 14px;
+  height: 48px;
+  line-height: 24px;
+  margin-left: -90px;
+  margin-top: -24px;
+  text-align: center;
+  font-weight: 400;
+  -webkit-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
+}
+
+.map-show-on-click:hover:before,
+.map-show-on-click:hover:after {
+  opacity: 1;
 }
 
 #map {
