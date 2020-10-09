@@ -110,12 +110,12 @@
         <div class="hotel-info__text">
           <div class="hotel-wrapper">
 
-            <h1 class="hotel-name hotel-info__name">Сообщение отправлено!</h1>
+            <h1 class="hotel-name hotel-info__name">Your message has been send</h1>
 
           </div>
           <!-- /.hotel-wrapper -->
           <p class="description hotel-info__description">
-            Наш менеджер позвонит вам через 5 минут.
+            Our manager will contact you soon
           </p>
         </div>
         <!-- /.hotel-info__text -->
@@ -131,7 +131,8 @@
     <div class="container">
       <div class="footer-wrapper">
         <a href="#" class="footer__logo">
-          <img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" class="logo" />
+          <img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" class="logo" data-aos="zoom-in"
+            data-aos-duration="800" />
         </a>
         <!-- /.footer__logo -->
         <div class="footer__list footer__categories">
@@ -221,38 +222,49 @@
           <p class="footer__text">
             Feel free to contact us by phone, email or by our contact form
           </p>
-          <ul class="footer__ul">
-            <li class="footer__item footer__item--mb-2">
-              <div class="footer__icon-wrapper">
+          <div class="footer__div">
+            <div class="footer__item footer__item_location footer__item--mb-2">
+              <!-- <div class="footer__icon-wrapper">
                 <img class="footer__icon" src="img/map-marker.svg" alt="icon:map" />
-              </div>
-              9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United
-              States
-            </li>
-            <li class="footer__item footer__item--mb-2">
-              <div class="footer__icon-wrapper">
+              </div> -->
+              <p class="footer__details">9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United
+                States</p>
+            </div>
+            <div class="footer__item footer__item_phone footer__item--mb-2">
+              <!-- <div class="footer__icon-wrapper">
                 <img class="footer__icon" src="img/contact-phone-call.svg" alt="icon:phone" />
-              </div>
-              Tel (business hours) : 269 1500<br />
-              Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00
-              pm)<br />
-              Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)<br />
-            </li>
-            <li class="footer__item footer__item--mb-2">
-              <div class="footer__icon-wrapper">
+              </div> -->
+              <p class="footer__details">Tel (business hours) : <a href="tel:2691500" class="footer__phone">269
+                  1500</a></p>
+              <p class="footer__details">Tel (hotline) Monday - Saturday: <a href="tel:52566138"
+                  class="footer__phone">52-56-61-38</a>
+                (08:00 am – 20:00
+                pm)</p>
+              <p class="footer__details">Tel (hotline) Sunday: <a href="tel:52566138"
+                  class="footer__phone">52-56-61-38</a>
+                (08:00 am –
+                14:00 pm)</p>
+            </div>
+            <div class="footer__item footer__item_email footer__item--mb-2">
+              <!-- <div class="footer__icon-wrapper">
                 <img class="footer__icon" src="img/mail.svg" alt="icon:email" />
-              </div>
-              cherly.lawson@example.com
-            </li>
-          </ul>
+              </div> -->
+              <p class="footer__details"><a href="mailto:cherly.lawson@example.com"
+                  class="footer__email">cherly.lawson@example.com</a></p>
+            </div>
+          </div>
         </div>
         <!-- /.footer__contact-details -->
         <div class="footer__contact-form">
           <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
-          <form action="send.php" method="POST" class="footer__form">
-            <input type="text" class="footer__input" placeholder="Your Full Name*" name="name" />
-            <input type="text" class="footer__input" placeholder="Phone Number*" name="phone" />
-            <textarea class="footer__message" placeholder="Message" name="message"></textarea>
+          <form action="send.php" method="POST" class="footer__form form">
+            <div class="footer__input-group">
+              <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required />
+            </div>
+            <div class="footer__input-group">
+              <input type="tel" class="input footer__input" placeholder="Phone Number*" name="phone" required />
+            </div>
+            <textarea class="message footer__message" placeholder="Message" name="message"></textarea>
             <button class="button footer__button" type="submit">Send</button>
             <span class="footer__info">* Required Fields</span>
           </form>
@@ -262,9 +274,9 @@
       <!-- /.footer-wrapper -->
       <div class="footer__bottom">
         <div class="footer__policy">
-          <span class="footer__policy-item">Disclaimer</span>
-          <span class="footer__policy-item">Conditions of use</span>
-          <span class="footer__policy-item">Cancellation policy</span>
+          <a href="#" class="footer__policy-item">Disclaimer</a>
+          <a href="#" class="footer__policy-item">Conditions of use</a>
+          <a href="#" class="footer__policy-item">Cancellation policy</a>
         </div>
         <!-- /.footer__policy -->
         <img src="img/payment.png" alt="Image:payment-cards" class="footer__payment" />

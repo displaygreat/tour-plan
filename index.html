@@ -29,6 +29,7 @@
 
         <form action="#" class="search navbar__search navbar__search_mobile_hidden">
           <input type="text" class="search__input" placeholder="Search Location" />
+          <label class="cursor"></label>
           <button class="search__button">
             <img src="img/search.svg" alt="Icon: search" />
           </button>
@@ -200,7 +201,7 @@
           </div>
           <div class="map-show-on-click map-block" data-map-height="213"
             data-map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.0046814309244!2d79.80141631382159!3d7.574466994537729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2c96110de8289%3A0x3fd7668bc2d85eb9!2sGrand%20Hilton%20Hotel!5e0!3m2!1sen!2sil!4v1600929417992!5m2!1sen!2sil">
-            <img src="img/google-map.jpg" alt="Hotel on Google Maps">
+            <img class="map-block-img" src="img/google-map.jpg" alt="Hotel on Google Maps">
           </div>
 
           <!-- <div class="map-block">
@@ -270,7 +271,7 @@
                 <span class="card-price">$ 10,500</span>
                 <span class="card-price-sale">$ 8,500</span>
               </div>
-              <button class="button packages__button">Book Now</button>
+              <button data-toggle="modal" class="button packages__button">Book Now</button>
             </div>
             <!-- /.card-big-footer -->
           </div>
@@ -307,7 +308,7 @@
                 <span class="card-price">$ 8,500</span>
                 <span class="card-price-sale">$ 3,000</span>
               </div>
-              <button class="packages__button">Book Now</button>
+              <button data-toggle="modal" class="packages__button">Book Now</button>
             </div>
             <!-- /.card-small-footer -->
           </div>
@@ -342,7 +343,7 @@
                 <span class="card-price">$ 10,500</span>
                 <span class="card-price-sale">$ 9,500</span>
               </div>
-              <button class="packages__button">Book Now</button>
+              <button data-toggle="modal" class="packages__button">Book Now</button>
             </div>
             <!-- /.card-small-footer -->
           </div>
@@ -377,7 +378,7 @@
                 <span class="card-price">$ 4,500</span>
                 <span class="card-price-sale">$ 2,500</span>
               </div>
-              <button class="packages__button">Book Now</button>
+              <button data-toggle="modal" class="packages__button">Book Now</button>
             </div>
             <!-- /.card-small-footer -->
           </div>
@@ -414,7 +415,7 @@
                 <span class="card-price">$ 6,500</span>
                 <span class="card-price-sale">$ 3,500</span>
               </div>
-              <button class="packages__button">Book Now</button>
+              <button data-toggle="modal" class="packages__button">Book Now</button>
             </div>
             <!-- /.card-small-footer -->
           </div>
@@ -609,28 +610,28 @@
           <img src="img/activity-1.jpg" alt="The curious corner 
 of chamarel" class="card__image" />
           <h3 class="card__title">The curious corner of chamarel</h3>
-          <button class="card__button">Book Now</button>
+          <button data-toggle="modal" class="card__button">Book Now</button>
         </div>
         <!-- .card -->
         <div class="card activities__card" data-aos="fade-up" data-aos-delay="300">
           <img src="img/activity-2.jpg" alt="Gymkhana club golf
 course" class="card__image" />
           <h3 class="card__title">Gymkhana club golf course</h3>
-          <button class="card__button">Book Now</button>
+          <button data-toggle="modal" class="card__button">Book Now</button>
         </div>
         <!-- .card -->
         <div class="card activities__card" data-aos="fade-up" data-aos-delay="500">
           <img src="img/activity-3.jpg" alt="Tamarind falls hiking
 trip - full day" class="card__image" />
           <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
-          <button class="card__button">Book Now</button>
+          <button data-toggle="modal" class="card__button">Book Now</button>
         </div>
         <!-- .card -->
         <div class="card activities__card" data-aos="fade-up" data-aos-delay="700">
           <img src="img/activity-4.jpg" alt="The blue marine discovery
 quest" class="card__image" />
           <h3 class="card__title">The blue marine discovery quest</h3>
-          <button class="card__button">Book Now</button>
+          <button data-toggle="modal" class="card__button">Book Now</button>
         </div>
         <!-- .card -->
       </div>
